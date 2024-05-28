@@ -1,16 +1,14 @@
 <?php
-
-$server = "localhost";
-$user = "root";
+$servername = "localhost";
+$username = "root";
 $password = "";
-$nama_database = "we_shine";
+$dbname = "we_shine";
 
-// Membuat koneksi
-$conn = mysqli_connect($server, $user, $password, $nama_database);
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-// Memeriksa koneksi
-if (!$conn) {
-    die("Gagal terhubung dengan database: " . mysqli_connect_error());
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
-
 ?>
