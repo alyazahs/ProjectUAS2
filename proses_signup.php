@@ -13,13 +13,14 @@ if(isset($_POST['daftar'])){
             VALUES ('$name', '$username', '$password')";
     
     // Periksa apakah koneksi basis data berhasil
+    
     if ($conn) {
         $query = mysqli_query($conn, $sql);
 
         if($query){
             header('Location: index.html?status=sukses');
         } else {
-            header('Location: index.php?status=gagal');
+            header('Location: index.html?status=gagal');
         }
     } else {
         die("Koneksi database gagal: " . mysqli_connect_error());
