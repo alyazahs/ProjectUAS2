@@ -2,67 +2,74 @@
 <html>
 <head>
     <title>Formulir Pendaftaran Siswa Baru | SMK Coding</title>
-<<<<<<< HEAD
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        form {
-            background: white;
-            max-width: 400px;
-            margin: 30px auto;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        fieldset {
-            border: none;
-        }
-        p {
-            margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-        input[type="text"],
-        input[type="password"] {
-            width: 100%;
-            padding: 8px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            text-transform: uppercase;
-            cursor: pointer;
-            border-radius: 4px;
-            width: 100%;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
-    </style>
-=======
->>>>>>> c4d772394abb76491e834771f8d76b925e9cb08b
+    <title>Form WE SHINE</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+ 
 </head>
-<body>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-image: url('img/bottle.png');">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" class="align-center rounded-circle" style="height: 90px; width: 90px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">HOME</a>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownCategory" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                CATEGORY
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownCategory">
+                <a class="dropdown-item" href="category1.html">MAKE UP</a>
+                <a class="dropdown-item" href="category2.html">SKINCARE</a>
+                <a class="dropdown-item" href="category3.html">BODYCARE</a>
+                <a class="dropdown-item" href="category4.html">HAIRCARE</a>
+              </div>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownRecomendation" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                RECOMENDATION
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownRecomendation">
+                <a class="dropdown-item" href="recomendation1.php">PRODUCT SKINCARE</a>
+                <a class="dropdown-item" href="recomendation2.php">PRODUCT MAKE UP</a>
+                <a class="dropdown-item" href="recomendation3.php">PRODUCT BODYCARE</a>
+                <a class="dropdown-item" href="recomendation4.php">PRODUCT PARFUME</a>
+              </div>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownGRWU" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                GRWU
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownGRWU">
+                <a class="dropdown-item" href="grwu1.html">SKINCARE ROUTINE</a>
+                <a class="dropdown-item" href="grwu2.html">MAKE UP TUTORIAL</a>
+                <a class="dropdown-item" href="grwu3.html">FASHION</a>
+              </div>
+            </li>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownJoinUs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                JOIN US
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownJoinUs">
+                <a class="dropdown-item" href="signup.html">SIGN UP</a>
+                <a class="dropdown-item" href="profile.php">PROFILE</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
     <header>
-        <h3>Formulir Pendaftaran Siswa Baru</h3>
+        <h3>Registration</h3>
     </header>
     <form action="proses_signup.php" method="POST">
         <fieldset>
@@ -79,16 +86,18 @@
                 <input type="password" name="password" />
             </p>
             <p>
-                <input type="submit" value="Daftar" name="daftar" />
+                <input type="submit" value="daftar" name="daftar" />
             </p>
         </fieldset>
     </form>
         <div class="bottom">
-                <p>sudah punya akun?
-                    <a href="login.html">login</a>
+                <p>Already have an account?
+                    <a href="login.html">Login</a>
                 </p>
             </div>
     </form>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
