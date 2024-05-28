@@ -13,6 +13,7 @@ if(isset($_POST['daftar'])){
             VALUES ('$name', '$username', '$password')";
     
     // Periksa apakah koneksi basis data berhasil
+    
     if ($conn) {
         $query = mysqli_query($conn, $sql);
 
