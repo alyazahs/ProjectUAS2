@@ -1,14 +1,16 @@
 <?php
-$servername = "localhost";
-$username = "root";
+
+$server = "localhost";
+$user = "root";
 $password = "";
-$dbname = "skincare_reviews";
+$nama_database = "we_shine";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Membuat koneksi
+$conn = mysqli_connect($server, $user, $password, $nama_database);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+// Memeriksa koneksi
+if (!$conn) {
+    die("Gagal terhubung dengan database: " . mysqli_connect_error());
 }
+
 ?>
