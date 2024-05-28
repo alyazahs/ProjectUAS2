@@ -2,12 +2,12 @@
 require 'config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Check if username and password are set in POST request
+    
     if (isset($_POST["username"]) && isset($_POST["password"])) {
         $username = $_POST["username"];
         $password = $_POST["password"];
 
-        // Use prepared statements to avoid SQL injection
+       
         $stmt = $conn->prepare("SELECT * FROM pengguna WHERE username = ? AND password = ?");
         $stmt->bind_param("ss", $username, $password);
 
