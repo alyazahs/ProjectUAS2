@@ -19,7 +19,7 @@ if(isset($_POST['daftar'])){
         if($query){
             header('Location: index.html?status=sukses');
         } else {
-            header('Location: index.php?status=gagal');
+            header('Location: index.html?status=gagal');
         }
     } else {
         die("Koneksi database gagal: " . mysqli_connect_error());
