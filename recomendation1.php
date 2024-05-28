@@ -71,6 +71,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Bioderma</h5>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reviewModal">Add Review</button>
+                        <button type="button" class="btn btn-primary" onclick="location.href='add_review.php'">See Review</button>
                     </div>
                 </div>
             </div>
