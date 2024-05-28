@@ -7,7 +7,7 @@
     <header>
         <h3>Formulir Pendaftaran Siswa Baru</h3>
     </header>
-    <form action="proses_signuo.php" method="POST">
+    <form action="proses_signup.php" method="POST">
         <fieldset>
             <p>
                 <label for="name">Name: </label>
