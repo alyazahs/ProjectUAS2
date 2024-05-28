@@ -24,6 +24,11 @@
                 <input type="submit" value="Daftar" name="daftar" />
             </p>
         </fieldset>
+        <div class="bottom">
+                <p>sudah punya akun?
+                    <a href="login.html">login</a>
+                </p>
+            </div>
     </form>
 </body>
 </html>
