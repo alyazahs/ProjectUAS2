@@ -1,17 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Formulir Pendaftaran Siswa Baru | SMK Coding</title>
     <title>Form WE SHINE</title>
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<<<<<<< HEAD
-=======
- 
->>>>>>> c3ccab21b4e4c2e6e0bf02889d87164eb2201550
 </head>
-
-<body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-image: url('img/bottle.png');">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-image: url('img/bottle.png');">
         <a class="navbar-brand" href="#">
             <img src="img/logo.png" class="align-center rounded-circle" style="height: 90px; width: 90px;">
         </a>
@@ -45,7 +38,7 @@
                 <a class="dropdown-item" href="recomendation1.php">PRODUCT SKINCARE</a>
                 <a class="dropdown-item" href="recomendation2.php">PRODUCT MAKE UP</a>
                 <a class="dropdown-item" href="recomendation3.php">PRODUCT BODYCARE</a>
-                <a class="dropdown-item" href="recomendation4.php">PRODUCT PARFUME</a>
+                <a class="dropdown-item" href="recomendation4.php">PRODUCT HAIRCARE</a>
               </div>
             </li>
     
@@ -73,32 +66,29 @@
         </div>
       </nav>
     <header>
-        <h3>Registration</h3>
+        <h1 class="font-italic" style="text-align: center; margin-top: 30px; margin-bottom: 30px;">Registration</h1>
     </header>
-    <form action="proses_signup.php" method="POST">
+    <form action="proses_signup.php" method="POST" style="background-color: white; padding: 20px; border-radius: 10px; max-width: 500px; margin: 40px auto; color: #4B3621; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 10px;">
         <fieldset>
             <p>
                 <label for="name">Name: </label>
-                <input type="text" name="name" />
+                <input type="text" name="name" style="width: calc(100% - 20px); background-color: #582f0e; color: white;"/>
             </p>
             <p>
                 <label for="username">Username: </label>
-                <input type="text" name="username" />   
+                <input type="text" name="username" style="width: calc(100% - 20px); background-color: #582f0e; color: white;"/>   
             </p>
             <p>
                 <label for="password">Password: </label>
-                <input type="password" name="password" />
+                <input type="password" name="password" style="width: calc(100% - 20px); background-color: #582f0e; color: white;"/>
             </p>
             <p>
-                <input type="submit" value="daftar" name="daftar" />
+                <input type="submit" value="daftar" name="daftar" style="background-color: #a98467;  border-radius: 10px; color: white; margin-top: 5px; margin-bottom: 5px;"/>
+            </p>
+            <p style="text-align: center;">Already have an account?
+                <a style="color: black; font-weight: bold;" href="login.html">Login</a>
             </p>
         </fieldset>
-    </form>
-        <div class="bottom">
-                <p>Already have an account?
-                    <a href="login.html">Login</a>
-                </p>
-            </div>
     </form>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
