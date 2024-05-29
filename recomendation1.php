@@ -71,7 +71,17 @@
                     <div class="card-body">
                         <h5 class="card-title">Bioderma</h5>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reviewModal">Add Review</button>
-                        <button type="button" class="btn btn-primary" onclick="location.href='add_review.php'">See Review</button>
+                        <button type="button" class="btn btn-primary" onclick="location.href='add_rc1_cl1.php'">See Review</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://api.watsons.co.id/medias/zoom-back-56012.jpg?context=bWFzdGVyfHd0Y2lkL2ltYWdlc3w1MDUxMXxpbWFnZS9qcGVnfGFEUTBMMmc0TVM4eE1UWTVNalEwTWpBeU5qQXhOQzk2YjI5dExXSmhZMnN0TlRZd01USXVhbkJufDI4MThiYWJmMTIzNGIwODYzMTlkNWM4M2ZiZmFiYWZmYjIwZmMyZjI4ZmZhMTc0YTQ0MjNiYzhiNGExZmIwMzk" class="card-img-top" alt="Product Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Garnier</h5>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reviewModal">Add Review</button>
+                        <button type="button" class="btn btn-primary" onclick="location.href='add_rc1.cl2.php'">See Review</button>
                     </div>
                 </div>
             </div>
@@ -89,7 +99,30 @@
                     </div>
                     <div class="modal-body">
                         <!-- Review form -->
-                        <form action="add_review.php" method="POST" class="needs-validation" novalidate>
+                        <form action="add_rc1_cl1.php" method="POST" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="skinType">Skin Type</label>
+                                <input type="text" class="form-control" id="skinType" name="skinType" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="usageDuration">Usage Duration</label>
+                                <input type="text" class="form-control" id="usageDuration" name="usageDuration" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="review">Review</label>
+                                <textarea class="form-control" id="review" name="review" rows="3" required></textarea>
+                            </div>
+                            <input type="hidden" id="productId" name="productId" value="1"> <!-- Example product ID -->
+                            <button type="submit" class="btn btn-primary">Submit Review</button>
+                        </form>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Review form -->
+                        <form action="add_rc1_cl2.php" method="POST" class="needs-validation" novalidate>
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" class="form-control" id="name" name="name" required>
