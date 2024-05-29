@@ -12,6 +12,7 @@
     <style>
         .bg-section {
             background-image: url('img/bg2.png');
+            padding: 20px;
         }
     </style>
 </head>
@@ -22,22 +23,36 @@
 
         <div class="row">
             <?php
+<<<<<<< HEAD
             $sql = "SELECT * FROM produk";
+=======
+            // Query untuk mengambil produk dengan id_kategori = 1
+            $sql = "SELECT * FROM produk WHERE id_kategori = 1";
+>>>>>>> 90042b37db0d15d63ce54a4d5ef30166da09f289
             $result = $conn->query($sql);
-            if ($result->num_rows > 0) {
-                while($row = $result->fetch_assoc()) {
-                    echo "<div class='col-md-4'>";
-                    echo "<div class='card mb-4 shadow-sm'>";
-                    echo "<img src='" . $row["url_gambar"] . "' class='card-img-top' alt='Product Image'>";
-                    echo "<div class='card-body'>";
-                    echo "<h5 class='card-title'>" . $row["nama_produk"] . "</h5>";
-                    echo "<a href='add_review.php' class='btn btn-primary'>Add Review</a>"; // Updated button
-                    echo "<button type='button' class='btn btn-primary' onclick=\"location.href='add_review_process.php'\">See Review</button>";
-                    echo "</div></div></div>";
-                }
+
+            // Debugging: Tampilkan pesan error jika query gagal
+            if (!$result) {
+                echo "Error: " . $conn->error;
             } else {
-                echo "Tidak ada produk.";
+                // Jika ada hasil, tampilkan produk
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                        echo "<div class='col-md-4'>";
+                        echo "<div class='card mb-4 shadow-sm'>";
+                        echo "<img src='" . $row["url_gambar"] . "' class='card-img-top' alt='Product Image'>";
+                        echo "<div class='card-body'>";
+                        echo "<h5 class='card-title'>" . $row["nama_produk"] . "</h5>";
+                        echo "<a href='add_review.php?productId=" . $row["id_produk"] . "' class='btn btn-primary'>Add Review</a>";
+                        echo "<a href='add_review_process.php?productId=" . $row["id_produk"] . "' class='btn btn-primary'>See Review</a>";
+                        echo "</div></div></div>";
+                    }
+                } else {
+                    echo "Tidak ada produk.";
+                }
             }
+
+            // Tutup koneksi
             $conn->close();
             ?>
         </div>
