@@ -8,15 +8,15 @@ if(isset($_POST['daftar'])){
     $password = isset($_POST['password']) ? $_POST['password'] : '';
 
     $sql = "INSERT INTO pengguna (name, username, password)
-            VALUES ('$name', '$username', '$password')";
+            VALUES ('$name', '$username', md5('$password'))";
     
     if ($conn) {
         $query = mysqli_query($conn, $sql);
 
         if($query){
-            header('Location: index.html?status=sukses');
+            header('Location: index.php?status=sukses');
         } else {
-            header('Location: index.html?status=gagal');
+            header('Location: index.php?status=gagal');
         }
     } else {
         die("Koneksi database gagal: " . mysqli_connect_error());

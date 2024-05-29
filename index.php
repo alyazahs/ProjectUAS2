@@ -1,74 +1,19 @@
+<?php include 'navbar.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WE SHINE!</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRWU - WE SHINE!</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .bg-section {
+            background-image: url('img/bg2.png');
+        }
+    </style>
 </head>
-
-<body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-image: url('img/bottle.png');">
-    <a class="navbar-brand" href="#">
-        <img src="img/logo.png" class="align-center rounded-circle" style="height: 90px; width: 90px;">
-    </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="index.html">HOME</a>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownCategory" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            CATEGORY
-          </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownCategory">
-              <a class="dropdown-item" href="category1.html">MAKE UP</a>
-              <a class="dropdown-item" href="category2.html">SKINCARE</a>
-              <a class="dropdown-item" href="category3.html">BODYCARE</a>
-              <a class="dropdown-item" href="category4.html">HAIRCARE</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownRecomendation" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            RECOMENDATION
-          </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownRecomendation">
-              <a class="dropdown-item" href="recomendation1.php">PRODUCT SKINCARE</a>
-              <a class="dropdown-item" href="recomendation2.html">PRODUCT MAKE UP</a>
-              <a class="dropdown-item" href="recomendation3.html">PRODUCT BODYCARE</a>
-              <a class="dropdown-item" href="recomendation4.html">PRODUCT HAIRCARE</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownGRWU" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            GRWU
-          </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownGRWU">
-              <a class="dropdown-item" href="grwu1.html">SKINCARE ROUTINE</a>
-              <a class="dropdown-item" href="grwu2.html">MAKE UP TUTORIAL</a>
-              <a class="dropdown-item" href="grwu3.html">FASHION</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownJoinUs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            JOIN US
-          </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownJoinUs">
-              <a class="dropdown-item" href="signup.html">SIGN UP</a>
-              <a class="dropdown-item" href="profile.php">PROFILE</a>
-            </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
 
     <div class="AboutUs">
       <img src="img/skincare1.png" alt="" style="position: absolute; z-index: 1; object-fit: cover; width: 100%; height: 100%; left: 0; top: 115px;">
