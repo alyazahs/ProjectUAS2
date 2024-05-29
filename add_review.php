@@ -1,4 +1,4 @@
-<?php include 'config.php'; // Include database connection file ?>
+<?php include 'config.php'; ?>
 <?php include 'navbar.php'; ?>
 
 <!DOCTYPE html>
@@ -13,21 +13,8 @@
 <body>
 <div class="container mt-5">
     <h2 class="mb-4">Add Review</h2>
-    <form action="add_review_process.php" method="POST">
-        <div class="form-group">
-            <label for="productName">Product Name</label>
-            <select class="form-control" id="productName" name="productId">
-                <?php
-                $sql = "SELECT id_produk, nama_produk FROM produk";
-                $result = $conn->query($sql);
-                if ($result->num_rows > 0) {
-                    while($row = $result->fetch_assoc()) {
-                        echo "<option value='" . $row["id_produk"] . "'>" . $row["nama_produk"] . "</option>";
-                    }
-                }
-                ?>
-            </select>
-        </div>
+    <form action="add_review_prosess.php" method="POST">
+        <input type="hidden" name="productId" value="<?php echo $_GET['productId']; ?>">
         <div class="form-group">
             <label for="userName">Your Name</label>
             <input type="text" class="form-control" id="userName" name="name" required>
