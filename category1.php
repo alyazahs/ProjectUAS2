@@ -160,7 +160,95 @@
         </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-md-4 custom-col product-item">
+        <img src="https://down-id.img.susercontent.com/file/id-11134201-23030-d4j147fb7gov52" alt="Product 16">
+        <div class="product-info bg-white p-3">
+          <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">MAKE OVER Velvet Mattifying Primer </h6>
+          <p>Rp90.950</p>
+          <a href="https://shopee.co.id/MAKE-OVER-Velvet-Mattifying-Primer-Primer-matte-mengecilkan-pori-oil-control-cocok-kulit-berminyak-tidak-berwarna-membuat-makeup-lebih-tahan-lama-base-makeup-non-comedogenic-i.63984475.1058801309?sp_atk=320a5588-321d-4af7-ab30-ca2d7224ee58&xptdk=320a5588-321d-4af7-ab30-ca2d7224ee58" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div class="col-md-4 custom-col product-item">
+        <img src="https://down-id.img.susercontent.com/file/id-11134201-7qul6-lgcf6rk8468jca" alt="Product 17">
+        <div class="product-info bg-white p-3">
+          <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">Mineral Botanica Dura-Wear Liquid Foundation</h6>
+          <p>Rp174.900</p>
+          <a href="https://shopee.co.id/Mineral-Botanica-Dura-Wear-Liquid-Foundation-30g-i.124549994.3317592570?sp_atk=d2db432d-a19e-486f-bdd5-b276841c5e92&xptdk=d2db432d-a19e-486f-bdd5-b276841c5e92" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div class="col-md-4 custom-col product-item">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98u-lq0cibs3b85iec" alt="Product 18">
+        <div class="product-info bg-white p-3">
+          <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">Dear Me Beauty Hypergloss Lip Balm</h6>
+          <p>Rp84.550</p>
+          <a href="https://shopee.co.id/-NEW-SHADES!-Dear-Me-Beauty-Hypergloss-Lip-Balm-i.45495764.20483545330?sp_atk=127f285c-5735-411d-98a2-10e2ce740d39" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div class="col-md-4 custom-col product-item">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7qul7-lijplpomgu5f3f" alt="Product 19">
+        <div class="product-info bg-white p-3">
+          <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">Revlon Eyebrow Pencil with Brush</h6>
+          <p>Rp86.400</p>
+          <a href="https://shopee.co.id/Revlon-Eyebrow-Pencil-with-Brush-Dark-Brown-(pensil-alis-waterproof-dengan-hasil-natural)-i.167409897.7804588254?publish_id=&sp_atk=b012795e-d9bd-4bc6-943a-6a7c9018b1c5&xptdk=b012795e-d9bd-4bc6-943a-6a7c9018b1c5" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div class="col-md-4 custom-col product-item">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98y-lnjtlbf7wdyy80" alt="Product 20">
+        <div class="product-info bg-white p-3">
+          <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">Rollover Reaction - DEWDROP! 12hr+ Hydrating Long Lasting 2 in 1 Liptint for Lips and Cheek</h6>
+          <p>Rp79.000</p>
+          <a href="https://shopee.co.id/Rollover-Reaction-DEWDROP!-12hr-Hydrating-Long-Lasting-2-in-1-Liptint-for-Lips-and-Cheek-i.80079301.13438805270?sp_atk=3d639677-4577-4b1f-850f-6371782fb466&xptdk=3d639677-4577-4b1f-850f-6371782fb466" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 custom-col product-item">
+        <img src="https://down-id.img.susercontent.com/file/sg-11134201-22120-9hfzmzzuxnlv25" alt="Product 21">
+        <div class="product-info bg-white p-3">
+          <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">BLP - Matte Liner - Pitch Black - Eyeliner</h6>
+          <p>Rp109.650</p>
+          <a href="https://shopee.co.id/BLP-Matte-Liner-Pitch-Black-Eyeliner-i.127651884.1930137946?sp_atk=f03f4907-3622-4efe-8562-44552b3e760e" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div class="col-md-4 custom-col product-item">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7qul8-ljkv9jr63ie050" alt="Product 22">
+        <div class="product-info bg-white p-3">
+          <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">SASC Flawless Miracle Powder - Translucent</h6>
+          <p>Rp144.075</p>
+          <a href="https://shopee.co.id/SASC-Flawless-Miracle-Powder-Translucent-i.64639547.4516784567?sp_atk=c0bcbcd0-87ff-41d3-951b-c5ee4e1395d8&xptdk=c0bcbcd0-87ff-41d3-951b-c5ee4e1395d8" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div class="col-md-4 custom-col product-item">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98q-lvsd6b7jk7ku8d" alt="Product 23">
+        <div class="product-info bg-white p-3">
+          <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">PINKFLASH 3 Shades Eyeshadow Palette Giltter High Pigment Easy To Blend Lasting 15 Colors</h6>
+          <p>Rp35.920</p>
+          <a href="https://shopee.co.id/PINKFLASH-3-Shades-Eyeshadow-Palette-Giltter-High-Pigment-Easy-To-Blend-Lasting-15-Colors-i.313054595.17336683364?xptdk=2787d3c9-1f59-4867-9d67-180a758d2ee0" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div class="col-md-4 custom-col product-item">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98s-lvsdv85gok6x94" alt="Product 24">
+        <div class="product-info bg-white p-3">
+          <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">NPURE ACNE POWER COVER Power Powder</h6>
+          <p>Rp66.542</p>
+          <a href="https://shopee.co.id/%E3%80%90TASYA-FARASYA-APPROVED%E3%80%91-NPURE-ACNE-POWER-COVER-Power-Powder-Bedak-Cover-Jerawat-Powder-Fondation-Powder-For-Acne-Skin-Bedak-Kulit-Berjerawat-i.115276607.25471087379?sp_atk=cfd1cfcb-a39c-439d-b1c4-6af02548eef0&xptdk=cfd1cfcb-a39c-439d-b1c4-6af02548eef0" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+      <div class="col-md-4 custom-col product-item">
+        <img src="https://down-id.img.susercontent.com/file/sg-11134201-23020-3pmltigs8mnv57" alt="Product 25">
+        <div class="product-info bg-white p-3">
+          <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">Luxcrime Ulti-Matte Oil Control Setting Spray </h6>
+          <p>Rp59.250</p>
+          <a href="https://shopee.co.id/Luxcrime-Ulti-Matte-Oil-Control-Setting-Spray-Untuk-Makeup-Tahan-Lama-Transferproof-Kontrol-Minyak-Tahan-24-Jam-i.3278276.3095013349" class="btn btn-primary">Buy Now</a>
+        </div>
+      </div>
+    </div>
   </div>
+
+</div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

@@ -161,8 +161,95 @@
           </div>
         </div>
       </div>
-  </div>
 
+      <div class="row">
+      <div class="col-md-4 custom-col product-item">
+        <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98x-lqu8whbrtdf8a5" alt="Product 16">
+          <div class="product-info bg-white p-3">
+            <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">NATURE REPUBLIC Aloe Vera 92% Soothing Gel - 300ml</h6>
+            <p>Rp70.320</p>
+            <a href="https://shopee.co.id/NATURE-REPUBLIC-Aloe-Vera-92-Soothing-Gel-300ml-i.78838801.1345373609?xptdk=0e98385f-0997-478e-905b-57dcef0e85f8" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+        <div class="col-md-4 custom-col product-item">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98v-llvv2z3fcl9n94" alt="Product 17">
+          <div class="product-info bg-white p-3">
+            <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">Evershine Moringa Multipurpose Gel 200ml</h6>
+            <p>Rp200.000</p>
+            <a href="https://shopee.co.id/Evershine-Moringa-Multipurpose-Gel-200ml-i.73969875.2462180854?xptdk=a5233b9b-c6a8-4540-bfdd-d32687356a62" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+        <div class="col-md-4 custom-col product-item">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98x-lom9rpu6uh6hcc" alt="Product 18">
+          <div class="product-info bg-white p-3">
+            <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">Pratista - Calming Spray 100ml</h6>
+            <p>Rp23.200</p>
+            <a href="https://shopee.co.id/Pratista-Calming-Spray-100ml-i.1606188.7115237473?xptdk=cf23e7b5-dbcd-4e25-9964-a7b578a8cfda" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+        <div class="col-md-4 custom-col product-item">
+          <img src="https://down-id.img.susercontent.com/file/sg-11134201-22120-021ohqwcmzkv02" alt="Product 19">
+          <div class="product-info bg-white p-3">
+            <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">Olay Regenerist Retinol 24 Niacinamide Night Moisturizer Cream </h6>
+            <p>Rp198.100</p>
+            <a href="https://shopee.co.id/Olay-Regenerist-Retinol-24-Niacinamide-Night-Moisturizer-Cream-Skincare-Perawatan-Wajah-Antiaging-50g-i.610201703.14448571961" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+        <div class="col-md-4 custom-col product-item">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-7r990-lqcwqtb4ig4eb0" alt="Product 20">
+          <div class="product-info bg-white p-3">
+            <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">SCORA 5% Niacinamide Hydramoist Gel 100ml </h6>
+            <p>Rp59.900</p>
+            <a href="https://shopee.co.id/-FLASH-SALE-SCORA-5-Niacinamide-Hydramoist-Gel-100ml-Pelembab-Wajah-yang-Mencerahkan-Kulit-Memperbaiki-Skin-Barrier-dan-Perfecting-Make-Up-i.1112776376.25207773183?sp_atk=8bd030cf-d9c9-4441-b1c3-90e1d6531b69&xptdk=8bd030cf-d9c9-4441-b1c3-90e1d6531b69" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+      <div class="col-md-4 custom-col product-item">
+          <img src="https://down-id.img.susercontent.com/file/id-11134201-7r98q-lsj96avqezw103" alt="Product 21">
+          <div class="product-info bg-white p-3">
+            <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">BNB barenbliss Ceramoist Glow Lip Serum [3in1 Glossy] </h6>
+            <p>Rp50.700</p>
+            <a href="https://shopee.co.id/-PREORDER-BNB-barenbliss-Ceramoist-Glow-Lip-Serum-3in1-Glossy-Untuk-bibir-kering-kering-dan-pecah-pecah-i.481522314.18371968620?sp_atk=c33bd300-332e-4140-8bdf-843fd81c6325&xptdk=c33bd300-332e-4140-8bdf-843fd81c6325" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+        <div class="col-md-4 custom-col product-item">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98o-lkowt3rct3tsde" alt="Product 22">
+          <div class="product-info bg-white p-3">
+            <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">Glad2Glow Centella Soothing Moisturizer Gel Cica</h6>
+            <p>Rp34.500</p>
+            <a href="https://shopee.co.id/Glad2Glow-Centella-Soothing-Moisturizer-Gel-Cica-Pelembab-Wajah-55g-30g-Oil-Control-Hydrating-Moisturizer-Jerawat-Control-Cream-Day-Night-Cream-Skincare-Memperbaiki-Skin-Barrier-dan-Primer-Menghidrasi-Kulit-Wajah-i.809769142.23668056941?xptdk=c3dbbffb-56a2-4e90-8b56-6b96d644145a" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+        <div class="col-md-4 custom-col product-item">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98r-lqept53l8vgl82" alt="Product 23">
+          <div class="product-info bg-white p-3">
+            <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">Scarlett Whitening Ultra Light Daily Sunscreen SPF 50+ PA++++ [Water Based]</h6>
+            <p>Rp55.000</p>
+            <a href="https://shopee.co.id/-Oily-Skin-Friendly-Scarlett-Whitening-Ultra-Light-Daily-Sunscreen-SPF-50-PA-Water-Based-Meresap-20an-Detik-(Super-Ringan)-dengan-7X-Ceramide-9X-Hyaluronic-Acid-No-Whitecast-i.255365082.23754646706?sp_atk=ac26ac92-05d4-4a05-8bdd-402fd54594ba" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+        <div class="col-md-4 custom-col product-item">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-7r990-lla3v0umbii103" alt="Product 24">
+          <div class="product-info bg-white p-3">
+            <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">Implora Perfect Shield Sunscreen</h6>
+            <p>Rp34.000</p>
+            <a href="https://shopee.co.id/Implora-Perfect-Shield-Sunscreen-i.10960132.18447683979?xptdk=92f11744-3dce-4dab-bd2c-4dcc5a27d892" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+        <div class="col-md-4 custom-col product-item">
+          <img src="https://down-id.img.susercontent.com/file/id-11134207-7r98o-lrcp0i3rth3h77" alt="Product 25">
+          <div class="product-info bg-white p-3">
+            <h6 class="product-name" style="max-height: 50px; overflow-y: auto;">Skin Game Kind Watery Moisturizer</h6>
+            <p>Rp81.100</p>
+            <a href="https://shopee.co.id/Skin-Game-Kind-Watery-Moisturizer-Pelembab-Wajah-(Skin-Barrier)-i.108420030.11211781373?xptdk=328a2515-9b08-451d-84ad-5c922f28079d" class="btn btn-primary">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
