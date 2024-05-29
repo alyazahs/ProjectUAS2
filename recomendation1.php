@@ -21,10 +21,15 @@
 <div class="bg-section">
     <div class="container">
         <h1 class="text-center font-italic bold" style="color:#582f0e;">Skincare Products</h1>
+
         <div class="row">
             <?php
+<<<<<<< HEAD
+            $sql = "SELECT * FROM produk";
+=======
             // Query untuk mengambil produk dengan id_kategori = 1
             $sql = "SELECT * FROM produk WHERE id_kategori = 1";
+>>>>>>> 90042b37db0d15d63ce54a4d5ef30166da09f289
             $result = $conn->query($sql);
 
             // Debugging: Tampilkan pesan error jika query gagal
