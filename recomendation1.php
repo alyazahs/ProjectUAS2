@@ -1,4 +1,5 @@
-<?php include 'config.php'; // Sertakan file koneksi.php ?>
+<?php include 'config.php'; ?>
+
 <?php include 'navbar.php'; ?>
 
 <!DOCTYPE html>

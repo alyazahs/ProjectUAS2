@@ -1,5 +1,6 @@
 <?php
 include 'navbar.php';
+
 include 'config.php';
 
 // Start the session to get the logged-in user's username
