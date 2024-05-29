@@ -19,10 +19,9 @@
 <div class="bg-section">
     <div class="container">
         <h1 class="text-center font-italic bold" style="color:#582f0e;">Skincare Products</h1>
-        <h3 class="text-center">Cleanser</h3>
         <div class="row">
             <?php
-            $sql = "SELECT * FROM produk";
+            $sql = "SELECT * FROM produk WHERE id_kategori = 1";
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
