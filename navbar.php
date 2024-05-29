@@ -27,10 +27,10 @@
                     RECOMMENDATION
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownRecomendation">
-                    <a class="dropdown-item" href="recommendation1.php">PRODUCT SKINCARE</a>
-                    <a class="dropdown-item" href="recommendation2.php">PRODUCT MAKE UP</a>
-                    <a class="dropdown-item" href="recommendation3.php">PRODUCT BODYCARE</a>
-                    <a class="dropdown-item" href="recommendation4.php">PRODUCT HAIRCARE</a>
+                    <a class="dropdown-item" href="recomendation1.php">PRODUCT SKINCARE</a>
+                    <a class="dropdown-item" href="recomendation2.php">PRODUCT MAKE UP</a>
+                    <a class="dropdown-item" href="recomendation3.php">PRODUCT BODYCARE</a>
+                    <a class="dropdown-item" href="recomendation4.php">PRODUCT HAIRCARE</a>
                 </div>
             </li>
             <li class="nav-item dropdown">

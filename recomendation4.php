@@ -1,4 +1,4 @@
-<?php include 'config.php'; // Sertakan file koneksi.php ?>
+<?php include 'config.php'; // Include database connection file ?>
 <?php include 'navbar.php'; ?>
 
 <!DOCTYPE html>
@@ -18,11 +18,10 @@
 <body>
 <div class="bg-section">
     <div class="container">
-        <h1 class="text-center font-italic bold" style="color:#582f0e;">Skincare Products</h1>
-        <h3 class="text-center">Cleanser</h3>
+        <h1 class="text-center font-italic bold" style="color:#582f0e;">Haircare Products</h1>
         <div class="row">
             <?php
-            $sql = "SELECT * FROM produk";
+            $sql = "SELECT * FROM produk WHERE id_kategori = 3"; // Assuming category ID 2 is for makeup
             $result = $conn->query($sql);
             if ($result->num_rows > 0) {
                 while($row = $result->fetch_assoc()) {
@@ -31,8 +30,8 @@
                     echo "<img src='" . $row["url_gambar"] . "' class='card-img-top' alt='Product Image'>";
                     echo "<div class='card-body'>";
                     echo "<h5 class='card-title'>" . $row["nama_produk"] . "</h5>";
-                    echo "<a href='add_review.php' class='btn btn-primary'>Add Review</a>"; // Updated button
-                    echo "<button type='button' class='btn btn-primary' onclick=\"location.href='add_review_process.php'\">See Review</button>";
+                    echo "<button type='button' class='btn btn-primary' data-toggle='modal' data-target='#reviewModal'>Add Review</button>";
+                    echo "<button type='button' class='btn btn-primary' onclick=\"location.href='add_review_process.php?productId=" . $row['id_produk'] . "'\">See Review</button>";
                     echo "</div></div></div>";
                 }
             } else {
@@ -42,6 +41,11 @@
             ?>
         </div>
     </div>
+</div>
+
+<!-- Review Modal -->
+<div class="modal fade" id="reviewModal" tabindex="-1" role="dialog" aria-labelledby="reviewModalLabel" aria-hidden="true">
+    <!-- Your modal content here -->
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
