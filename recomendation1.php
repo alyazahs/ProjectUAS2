@@ -38,8 +38,8 @@
                         echo "<img src='" . $row["url_gambar"] . "' class='card-img-top' alt='Product Image'>";
                         echo "<div class='card-body'>";
                         echo "<h5 class='card-title'>" . $row["nama_produk"] . "</h5>";
-                        echo "<a href='add_review.php' class='btn btn-primary'>Add Review</a>";
-                        echo "<button type='button' class='btn btn-primary' onclick=\"location.href='add_review_process.php'\">See Review</button>";
+                        echo "<a href='add_review.php?productId=" . $row["id_produk"] . "' class='btn btn-primary'>Add Review</a>";
+                        echo "<a href='add_review_process.php?productId=" . $row["id_produk"] . "' class='btn btn-primary'>See Review</a>";
                         echo "</div></div></div>";
                     }
                 } else {

@@ -13,26 +13,36 @@
 <body>
 <div class="container mt-5">
     <h2 class="mb-4">Add Review</h2>
-    <form action="add_review_prosess.php" method="POST">
-        <input type="hidden" name="productId" value="<?php echo $_GET['productId']; ?>">
-        <div class="form-group">
-            <label for="userName">Your Name</label>
-            <input type="text" class="form-control" id="userName" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="skinType">Skin Type</label>
-            <input type="text" class="form-control" id="skinType" name="skinType" required>
-        </div>
-        <div class="form-group">
-            <label for="usageDuration">Usage Duration</label>
-            <input type="text" class="form-control" id="usageDuration" name="usageDuration" required>
-        </div>
-        <div class="form-group">
-            <label for="review">Review</label>
-            <textarea class="form-control" id="review" name="review" rows="3" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit Review</button>
-    </form>
+    <?php
+    // Validasi productId
+    if (isset($_GET['productId']) && is_numeric($_GET['productId'])) {
+        $productId = intval($_GET['productId']);
+    ?>
+        <form action="add_review_prosess.php" method="POST">
+            <input type="hidden" name="productId" value="<?php echo $productId; ?>">
+            <div class="form-group">
+                <label for="userName">Your Name</label>
+                <input type="text" class="form-control" id="userName" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="skinType">Skin Type</label>
+                <input type="text" class="form-control" id="skinType" name="skinType" required>
+            </div>
+            <div class="form-group">
+                <label for="usageDuration">Usage Duration</label>
+                <input type="text" class="form-control" id="usageDuration" name="usageDuration" required>
+            </div>
+            <div class="form-group">
+                <label for="review">Review</label>
+                <textarea class="form-control" id="review" name="review" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+    <?php
+    } else {
+        echo "<p>Invalid product ID.</p>";
+    }
+    ?>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
