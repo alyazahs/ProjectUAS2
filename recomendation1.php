@@ -1,5 +1,5 @@
-<?php include 'config.php'; // Sertakan file koneksi.php ?>
-<?php include 'navbar.php'; ?>
+<?php include 'config.php'; // Include the database connection file ?>
+<?php include 'navbar.php'; // Include the navigation bar ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,36 +12,66 @@
     <style>
         .bg-section {
             background-image: url('img/bg2.png');
-            padding: 20px;
+            padding: 40px 0;
+            background-size: cover;
+            background-position: center;
+            color: #582f0e;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #582f0e;
+        }
+        .btn-primary {
+            background-color: #582f0e;
+            border-color: #582f0e;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #7a4b2e;
+            border-color: #7a4b2e;
         }
     </style>
 </head>
 <body>
 <div class="bg-section">
     <div class="container">
-        <h1 class="text-center font-italic bold" style="color:#582f0e;">Skincare Products</h1>
+        <h1 class="text-center font-italic bold">Skincare Products</h1>
         <div class="row">
             <?php
-            // Query untuk mengambil produk dengan id_kategori = 1
+            // Query to fetch products with id_kategori = 1
             $sql = "SELECT * FROM produk WHERE id_kategori = 1";
             $result = $conn->query($sql);
 
             if (!$result) {
-                echo "Error: " . $conn->error;
+                echo "<div class='col-12'><p class='text-center text-danger'>Error: " . $conn->error . "</p></div>";
             } else {
                 if ($result->num_rows > 0) {
-                    while($row = $result->fetch_assoc()) {
+                    while ($row = $result->fetch_assoc()) {
                         echo "<div class='col-md-4'>";
                         echo "<div class='card mb-4 shadow-sm'>";
-                        echo "<img src='" . $row["url_gambar"] . "' class='card-img-top' alt='Product Image'>";
+                        echo "<img src='" . htmlspecialchars($row["url_gambar"]) . "' class='card-img-top' alt='Product Image'>";
                         echo "<div class='card-body'>";
-                        echo "<h5 class='card-title'>" . $row["nama_produk"] . "</h5>";
-                        echo "<a href='add_review.php?productId=" . $row["id_produk"] . "&categoryId=1' class='btn btn-primary'>Add Review</a>";
-                        echo "<a href='add_review_process.php?productId=" . $row["id_produk"] . "' class='btn btn-primary'>See Review</a>";
+                        echo "<h5 class='card-title'>" . htmlspecialchars($row["nama_produk"]) . "</h5>";
+                        echo "<a href='add_review.php?productId=" . intval($row["id_produk"]) . "&categoryId=1' class='btn btn-primary'>Add Review</a>";
+                        echo "<a href='add_review_process.php?productId=" . intval($row["id_produk"]) . "' class='btn btn-secondary'>See Review</a>";
                         echo "</div></div></div>";
                     }
                 } else {
-                    echo "Tidak ada produk.";
+                    echo "<div class='col-12'><p class='text-center'>No products available.</p></div>";
                 }
             }
 
