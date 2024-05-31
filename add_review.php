@@ -2,7 +2,6 @@
 <?php include 'navbar.php'; ?>
 
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,12 +14,13 @@
 <div class="container mt-5">
     <h2 class="mb-4">Add Review</h2>
     <?php
-    // Validasi productId
-    if (isset($_GET['productId']) && is_numeric($_GET['productId'])) {
+    if (isset($_GET['productId']) && is_numeric($_GET['productId']) && isset($_GET['categoryId']) && is_numeric($_GET['categoryId'])) {
         $productId = intval($_GET['productId']);
+        $categoryId = intval($_GET['categoryId']);
     ?>
-        <form action="add_review_prosess.php" method="POST">
+        <form action="add_review_process.php" method="POST">
             <input type="hidden" name="productId" value="<?php echo $productId; ?>">
+            <input type="hidden" name="categoryId" value="<?php echo $categoryId; ?>">
             <div class="form-group">
                 <label for="userName">Your Name</label>
                 <input type="text" class="form-control" id="userName" name="name" required>
@@ -41,7 +41,7 @@
         </form>
     <?php
     } else {
-        echo "<p>Invalid product ID.</p>";
+        echo "<p>Invalid product ID or category ID.</p>";
     }
     ?>
 </div>

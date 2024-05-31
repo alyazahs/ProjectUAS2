@@ -1,5 +1,4 @@
-<?php include 'config.php'; ?>
-
+<?php include 'config.php'; // Sertakan file koneksi.php ?>
 <?php include 'navbar.php'; ?>
 
 <!DOCTYPE html>
@@ -21,22 +20,15 @@
 <div class="bg-section">
     <div class="container">
         <h1 class="text-center font-italic bold" style="color:#582f0e;">Skincare Products</h1>
-
         <div class="row">
             <?php
-<<<<<<< HEAD
-            $sql = "SELECT * FROM produk";
-=======
             // Query untuk mengambil produk dengan id_kategori = 1
             $sql = "SELECT * FROM produk WHERE id_kategori = 1";
->>>>>>> 90042b37db0d15d63ce54a4d5ef30166da09f289
             $result = $conn->query($sql);
 
-            // Debugging: Tampilkan pesan error jika query gagal
             if (!$result) {
                 echo "Error: " . $conn->error;
             } else {
-                // Jika ada hasil, tampilkan produk
                 if ($result->num_rows > 0) {
                     while($row = $result->fetch_assoc()) {
                         echo "<div class='col-md-4'>";
@@ -44,7 +36,7 @@
                         echo "<img src='" . $row["url_gambar"] . "' class='card-img-top' alt='Product Image'>";
                         echo "<div class='card-body'>";
                         echo "<h5 class='card-title'>" . $row["nama_produk"] . "</h5>";
-                        echo "<a href='add_review.php?productId=" . $row["id_produk"] . "' class='btn btn-primary'>Add Review</a>";
+                        echo "<a href='add_review.php?productId=" . $row["id_produk"] . "&categoryId=1' class='btn btn-primary'>Add Review</a>";
                         echo "<a href='add_review_process.php?productId=" . $row["id_produk"] . "' class='btn btn-primary'>See Review</a>";
                         echo "</div></div></div>";
                     }
@@ -53,7 +45,6 @@
                 }
             }
 
-            // Tutup koneksi
             $conn->close();
             ?>
         </div>
