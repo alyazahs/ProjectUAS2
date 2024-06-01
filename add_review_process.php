@@ -1,5 +1,14 @@
 <?php
 include 'config.php';
+session_start();
+
+// Ensure the user is logged in
+if (!isset($_SESSION['user_id'])) {
+    header('Location: login.php');
+    exit();
+}
+
+$user_id = $_SESSION['user_id'];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $productId = intval($_POST['productId']);
@@ -9,8 +18,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $usageDuration = $conn->real_escape_string($_POST['usageDuration']);
     $review = $conn->real_escape_string($_POST['review']);
 
-    $sql = "INSERT INTO review (id_produk, nama_pengguna, tipe_kulit, lama_penggunaan, review)
-            VALUES ('$productId', '$name', '$skinType', '$usageDuration', '$review')";
+    $sql = "INSERT INTO review (id_produk, nama_pengguna, tipe_kulit, lama_penggunaan, review, id_pengguna)
+            VALUES ('$productId', '$name', '$skinType', '$usageDuration', '$review', '$user_id')";
 
     if ($conn->query($sql) === TRUE) {
         header("Location: add_review_process.php?productId=$productId");
@@ -123,7 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             echo '<h1 class="mb-4">Reviews for ' . htmlspecialchars($product['nama_produk']) . '</h1>';
 
-            $stmt = $conn->prepare("SELECT * FROM review WHERE id_produk = ?");
+            $stmt = $conn->prepare("SELECT review.*, pengguna.profile_photo FROM review LEFT JOIN pengguna ON review.id_pengguna = pengguna.id WHERE id_produk = ?");
             $stmt->bind_param("i", $productId);
             $stmt->execute();
             $result = $stmt->get_result();
@@ -132,7 +141,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 while ($row = $result->fetch_assoc()) {
                     echo '<div class="review-card">';
                     echo '<div class="profile">';
-                    echo '<img src="profile.jpg" alt="Profile Image">';
+                    $profile_img = $row['profile_photo'] ? 'uploads/' . $row['profile_photo'] : 'default_profile.png';
+                    echo '<img src="' . htmlspecialchars($profile_img) . '" alt="Profile Image">';
                     echo '<div>';
                     echo '<div class="name">' . htmlspecialchars($row['nama_pengguna']) . '</div>';
                     echo '<div class="details">' . htmlspecialchars($row['tipe_kulit']) . ', ' . htmlspecialchars($row['lama_penggunaan']) . '</div>';
@@ -151,7 +161,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $stmt->close();
 
-            echo '<a href="' . $recommendationPage. '" class="btn btn-secondary back-button">Back</a>';
+            echo '<a href="' . $recommendationPage . '" class="btn btn-secondary back-button">Back</a>';
             echo '</div></body></html>';
         } else {
             echo "<p>Product not found.</p>";

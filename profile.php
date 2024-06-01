@@ -1,22 +1,27 @@
 <?php
-include 'navbar.php';
-
-include 'config.php';
-
-// Start the session to get the logged-in user's username
+require 'config.php';
 session_start();
 
-// Replace this with the actual logic to get the username of the logged-in user
-$username = $_SESSION['username'];
+if (!isset($_SESSION['user_id'])) {
+    header('Location: signup.php');
+    exit();
+}
 
-$sql = "SELECT * FROM pengguna WHERE username = '$username'";
-$result = mysqli_query($conn, $sql);
+$user_id = $_SESSION['user_id'];
 
-if ($result && mysqli_num_rows($result) > 0) {
-    $user = mysqli_fetch_assoc($result);
-} else {
+$query = "SELECT * FROM pengguna WHERE id = $user_id";
+$result = mysqli_query($conn, $query);
+
+if (!$result) {
+    die("Query failed: " . mysqli_error($conn));
+}
+
+$user = mysqli_fetch_assoc($result);
+if (!$user) {
     die("User not found.");
 }
+
+$profile_photo = $user['profile_photo'] ? 'uploads/' . $user['profile_photo'] : 'default_profile.png'; // Ensure you have a default profile photo
 ?>
 
 <!DOCTYPE html>
@@ -24,28 +29,56 @@ if ($result && mysqli_num_rows($result) > 0) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
+    <title>Profile</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-container {
+            text-align: center;
+            margin-top: 30px;
+            background-image: url('img/bg2.png');
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%; 
+            margin: 20px auto;
+            border: 5px solid white; 
+        }
+    </style>
 </head>
 <body>
-    <div class="container" style="margin-top: 40px;">
-        <div class="card" style="max-width: 600px; margin: 0 auto; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-            <div class="card-body">
-                <h2 class="card-title" style="text-align: center;">Profile</h2>
-                <div class="text-center">
-                    <img src="path_to_profile_picture.jpg" alt="Profile Picture" class="img-thumbnail" style="width: 150px; height: 150px; object-fit: cover;">
-                </div>
-                <ul class="list-group list-group-flush mt-4">
-                    <li class="list-group-item"><strong>Name:</strong> <?php echo $user['name']; ?></li>
-                    <li class="list-group-item"><strong>Username:</strong> <?php echo $user['username']; ?></li>
-                    <li class="list-group-item"><strong>Phone Number:</strong> <?php echo $user['no_hp']; ?></li>
-                    <li class="list-group-item"><strong>Email:</strong> <?php echo $user['email']; ?></li>
-                    <li class="list-group-item"><strong>Date of Birth:</strong> <?php echo $user['tgl_lahir']; ?></li>
-                </ul>
-            </div>
-        </div>
+    <header>
+        <h1 class="font-italic mt-4" style="text-align: center;">Profile</h1>
+    </header>
+    <div class="profile-container">
+        <img src="<?php echo htmlspecialchars($profile_photo); ?>" class="rounded-circle profile-photo" alt="Profile Photo">
     </div>
-
+    <form action="update_profile.php" method="POST" enctype="multipart/form-data" style="background-color: white; padding: 20px; border-radius: 10px; max-width: 500px; margin: 40px auto; color: #4B3621; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <fieldset>
+            <p>
+                <label for="name">Name: </label>
+                <input type="text" name="name" value="<?php echo htmlspecialchars($user['name']); ?>" style="width: calc(100% - 20px); background-color: #582f0e; color: white;"/>
+            </p>
+            <p>
+                <label for="email">Email: </label>
+                <input type="email" name="email" value="<?php echo htmlspecialchars($user['email']); ?>" style="width: calc(100% - 20px); background-color: #582f0e; color: white;"/>
+            </p>
+            <p>
+                <label for="phone">Phone: </label>
+                <input type="text" name="phone" value="<?php echo htmlspecialchars($user['phone']); ?>" style="width: calc(100% - 20px); background-color: #582f0e; color: white;"/>
+            </p>
+            <p>
+                <label for="profile_photo">Profile Photo: </label>
+                <input type="file" name="profile_photo" accept="image/*" style="width: calc(100% - 20px); background-color: #582f0e; color: white;"/>
+            </p>
+            <p>
+                <input type="submit" value="Save" name="update_profile" style="background-color: #a98467;  border-radius: 10px; color: white; margin-top: 5px; margin-bottom: 5px;"/>
+            </p>
+        </fieldset>
+    </form>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

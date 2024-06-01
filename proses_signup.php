@@ -4,19 +4,19 @@ include("config.php");
 if(isset($_POST['daftar'])){
     
     $name = isset($_POST['name']) ? $_POST['name'] : '';
-    $username = isset($_POST['username']) ? $_POST['username'] : '';
+    $email = isset($_POST['email']) ? $_POST['email'] : '';
     $password = isset($_POST['password']) ? $_POST['password'] : '';
 
-    $sql = "INSERT INTO pengguna (name, username, password)
-            VALUES ('$name', '$username', md5('$password'))";
+    $sql = "INSERT INTO pengguna (name, email, password)
+            VALUES ('$name', '$email', md5('$password'))";
     
     if ($conn) {
         $query = mysqli_query($conn, $sql);
 
         if($query){
-            header('Location: index.php?status=sukses');
+            header('Location: profile.php');
         } else {
-            header('Location: index.php?status=gagal');
+            header('Location: signup.php?status=gagal');
         }
     } else {
         die("Koneksi database gagal: " . mysqli_connect_error());

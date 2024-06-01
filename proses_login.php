@@ -1,35 +1,39 @@
 <?php
 require 'config.php';
+session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    
-    if (isset($_POST["username"]) && isset($_POST["password"])) {
-        $username = $_POST["username"];
-        $password = $_POST["password"];
+    if (isset($_POST["identifier"]) && isset($_POST["password"])) {
+        $identifier = $_POST["identifier"];
+        $password = md5($_POST["password"]);
 
-       
-        $stmt = $conn->prepare("SELECT * FROM pengguna WHERE username = ? AND password = ?");
-        print_r(md5($password));
-        $stmt->bind_param("ss", $username, md5($password));
+        $query = "SELECT id, name, email FROM pengguna WHERE (name = ? OR email = ?) AND password = ?";
+        $stmt = $conn->prepare($query);
 
+        // Check if the prepare statement was successful
+        if ($stmt === false) {
+            die("Prepare failed: " . htmlspecialchars($conn->error));
+        }
+
+        $stmt->bind_param("sss", $identifier, $identifier, $password);
         $stmt->execute();
         $result = $stmt->get_result();
 
         if ($result->num_rows > 0) {
-            header("Location: index.php");
+            $user = $result->fetch_assoc();
+            $_SESSION['user_id'] = $user['id'];
+            header("Location: profile.php");
         } else {
-            echo "<center><h1>Email atau Password Anda Salah. Silahkan Coba Login Kembali.</h1>
-                  <button><strong><a href='index.html'>Login</a></strong></button></center>";
+            echo "<center><h1>Email or Password is incorrect. Please try again.</h1>
+                  <button><strong><a href='login.php'>Login</a></strong></button></center>";
         }
 
         $stmt->close();
     } else {
-        echo "<center><h1>Username atau Password tidak boleh kosong.</h1>
-              <button><strong><a href='index.html'>Login</a></strong></button></center>";
+        echo "<center><h1>Username or Password cannot be empty.</h1>
+              <button><strong><a href='login.php'>Login</a></strong></button></center>";
     }
 } else {
-    echo "<center><h1>Metode pengiriman data tidak valid.</h1></center>";
+    echo "<center><h1>Invalid request method.</h1></center>";
 }
 ?>
-
-
