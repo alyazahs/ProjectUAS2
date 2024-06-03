@@ -12,7 +12,6 @@
     <style>
         .bg-section {
             background-image: url('img/bg2.png');
-            padding: 40px 0;
             background-size: cover;
             background-position: center;
             color: #582f0e;
@@ -49,7 +48,7 @@
 <body>
 <div class="bg-section">
     <div class="container">
-        <h1 class="text-center font-italic bold">Bodycare Products</h1>
+        <h1 class="text-center font-italic bold py-3">Bodycare Products</h1>
         <div class="row">
             <?php
             $sql = "SELECT * FROM produk WHERE id_kategori = 3";

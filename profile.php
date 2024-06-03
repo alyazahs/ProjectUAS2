@@ -48,14 +48,14 @@ $profile_photo = $user['profile_photo'] ? 'uploads/' . $user['profile_photo'] : 
         }
         .bg-section {
             background-image: url('img/bg2.png');
-            height: 800px;
+            height: 830px;
         }
     </style>
 </head>
 <body>
 <div class="bg-section">
     <header>
-        <h1 class="font-italic" style="text-align: center;">Profile</h1>
+        <h1 class="font-italic pt-4" style="text-align: center;">Profile</h1>
     </header>
     <div class="profile-container">
         <img src="<?php echo htmlspecialchars($profile_photo); ?>" class="rounded-circle profile-photo" alt="Profile Photo">

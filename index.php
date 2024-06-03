@@ -14,7 +14,7 @@
         }
     </style>
 </head>
-<body>
+<body class="bg-light">
     <div class="AboutUs">
         <img src="img/skincare1.png" alt="" style="position: absolute; z-index: 1; object-fit: cover; width: 100%; height: 100%; left: 0; top: 115px;">
         <section class="text-dark font-italic" style="margin-left: 300px; margin-right: 300px; margin-top: 30px; text-align: center; padding-left: 30px; padding-right: 30px; padding-top: 100px; padding-bottom: 30px; border-radius: 30px; position: relative; z-index: 2;">
@@ -66,10 +66,10 @@
         <div class="sosmed mx-5">
             <h5 style="flex: 1; margin-top: 110px; font-weight: bold;">SOSIAL MEDIA</h5>
             <a class="class text-dark" href="https://www.instagram.com/we_shine.ofc?igsh=YzljYTk1ODg3Zg==" style="display: flex; margin-bottom: 10px;">
-                <img src="img/instagram.jpg" style="height: 30px; width: 30px; border-radius: 5px; margin-right: 10px;">@WESHINE.ofc
+                <img src="img/instagram.jpg" style="height: 30px; width: 30px; border-radius: 5px; margin-right: 10px;">@we_shine.ofc
             </a>
             <a class="class text-dark" href="https://x.com/WESHINE_ofc?t=WPCXPPPZZ1-tOQvMXlEdzg&s=09" style="display: flex; margin-bottom: 10px;">
-                <img src="img/twitter.jpg" style="height: 30px; width: 30px; border-radius: 5px; margin-right: 10px;">@WESHINE.ofc
+                <img src="img/twitter.jpg" style="height: 30px; width: 30px; border-radius: 5px; margin-right: 10px;">@WESHINE_ofc
             </a>
             <a class="class text-dark" href="https://www.facebook.com/WESHINE.ofc" target="_blank" style="display: flex; margin-bottom: 10px;">
                 <img src="img/facebook.jpg" style="height: 30px; width: 30px; border-radius: 5px; margin-right: 10px;">@WESHINE.ofc
