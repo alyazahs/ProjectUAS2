@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRWU - WE SHINE!</title>
+    <title>WE SHINE!</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -49,10 +49,9 @@
 <body>
 <div class="bg-section">
     <div class="container">
-        <h1 class="text-center font-italic bold">Skincare Products</h1>
+        <h1 class="text-center font-italic bold">Haircare Products</h1>
         <div class="row">
             <?php
-            // Query to fetch products with id_kategori = 1
             $sql = "SELECT * FROM produk WHERE id_kategori = 4";
             $result = $conn->query($sql);
 

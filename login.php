@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRWU - WE SHINE!</title>
+    <title>WE SHINE!</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -20,7 +20,7 @@
                 <label for="password">Password: </label>
                 <input type="password" name="password" placeholder="Password" style="width: calc(100% - 20px); background-color: #582f0e; color: white; margin-bottom: 30px;">
             </div>
-            <button type="submit" name="login" class="btn-input" style="background-color: #a98467;  border-radius: 10px; color: white; margin-top: 5px; margin-bottom: 5px;">Login</button>
+            <button type="submit" name="login" class="btn-input" style="background-color: #a98467;  border-radius: 10px; color: white; margin-top: 5px; margin-bottom: 5px; border-color:transparent">Login</button>
             <div class="bottom">
                 <p style="text-align: center; margin-top: 20px;">Belum punya akun?
                     <a style="color: black; font-weight: bold;" href="signup.php">Register disini</a>

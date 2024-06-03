@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRWU - WE SHINE!</title>
+    <title>WE SHINE!</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -27,7 +27,7 @@
                 <input type="password" name="password" style="width: calc(100% - 20px); background-color: #582f0e; color: white;"/>
             </p>
             <p>
-                <input type="submit" value="daftar" name="daftar" style="background-color: #a98467;  border-radius: 10px; color: white; margin-top: 5px; margin-bottom: 5px;"/>
+                <input type="submit" value="Daftar" name="daftar" style="background-color: #a98467;  border-radius: 10px; color: white; margin-top: 5px; margin-bottom: 5px; border-color: transparent;"/>
             </p>
             <p style="text-align: center;">Already have an account?
                 <a style="color: black; font-weight: bold;" href="login.php">Login</a>

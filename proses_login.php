@@ -10,7 +10,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $query = "SELECT id, name, email FROM pengguna WHERE (name = ? OR email = ?) AND password = ?";
         $stmt = $conn->prepare($query);
 
-        // Check if the prepare statement was successful
         if ($stmt === false) {
             die("Prepare failed: " . htmlspecialchars($conn->error));
         }

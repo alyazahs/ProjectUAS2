@@ -29,7 +29,7 @@ $profile_photo = $user['profile_photo'] ? 'uploads/' . $user['profile_photo'] : 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>WE SHINE!</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .profile-container {
