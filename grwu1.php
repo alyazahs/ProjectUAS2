@@ -67,10 +67,37 @@
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card">
-                        <iframe class="card-img-top" src="https://www.youtube.com/embed/eRGFD5XRdgg?si=_zNRHJsmgBX1XguP" allowfullscreen></iframe>
+                        <iframe class="card-img-top" src="https://www.youtube.com/embed/j4mtybUhWic?si=aFOqWv5QOKKQt1Mf" allowfullscreen></iframe>
                         <div class="card-body" style="max-height: 130px; overflow-y: auto;">
-                            <h5 class="card-title">5 Best Skin Care Tips To Follow | Skin Care Routine | Stay Wow</h5>
-                            <p class="card-text">StayWow presents 5 best skin care tips for your daily skin care routine. In this video you will learn about the best skin care practices and skin care hacks to take care of your skin. These best skin care tips are backed by science and are highly effective.</p>
+                            <h5 class="card-title">BASIC SKINCARE 2024 / BIKIN GLOW UP</h5>
+                            <p class="card-text">Hallo semua✨Kalau kalian mau mulai skincarean di 2024 ini , dan bingung mau mulai dari mana , video ini bakal cocok banget buat kalian karena aku bakal bahas cara untuk memulai basic skincare untuk pemula.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <iframe class="card-img-top" src="https://www.youtube.com/embed/miqNZlLyweM?si=bFYvK3CtOTW3rh2D" allowfullscreen></iframe>
+                        <div class="card-body" style="max-height: 130px; overflow-y: auto;">
+                            <h5 class="card-title">UPDATED skincare routine for glowing, dewy, glass skin!!</h5>
+                            <p class="card-text">Hi beautifuls!!! Thank you so much for watching!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <iframe class="card-img-top" src="https://www.youtube.com/embed/xPf-t38BdLM?si=-okT1pZYmKr__TUC" allowfullscreen></iframe>
+                        <div class="card-body" style="max-height: 130px; overflow-y: auto;">
+                            <h5 class="card-title">skincare routine │ korean skincare, glassy + glowy skin, what i use for acne prone skin</h5>
+                            <p class="card-text">hi guys!i'm back with a long awaited skincare video! so many of you guys have been asking for my skincare routine so i wanted to show you guys all the products i've been using that has cleared up my skin and helped me to maintain glassy/glowy skin! hope you guys enjoy watching ◡̈love u guyssss</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <iframe class="card-img-top" src="https://www.youtube.com/embed/k9Yo5vYv-B4?si=7zf26_pWb41CUZpO" allowfullscreen></iframe>
+                        <div class="card-body" style="max-height: 130px; overflow-y: auto;">
+                            <h5 class="card-title">MY UPDATED SKINCARE ROUTINE | unsponsored skincare for acne</h5>
+                            <p class="card-text">make sure to watch every second of the video to ensure you don't miss any extra tips and tricks!</p>
                         </div>
                     </div>
                 </div>
