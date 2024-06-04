@@ -2,7 +2,7 @@
 include 'config.php';
 session_start();
 
-// Ensure the user is logged in
+// Memastikan pengguna telah login
 if (!isset($_SESSION['user_id'])) {
     header('Location: login.php');
     exit();
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($product) {
             $categoryId = $product['id_kategori'];
 
-            // Determine the appropriate recommendation page
+            // Menentukan halaman rekomendasi yang sesuai
             $recommendationPage = "";
             switch ($categoryId) {
                 case 1:
@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     $recommendationPage = "recomendation4.php";
                     break;
                 default:
-                    $recommendationPage = "recomendation1.php"; // Default page
+                    $recommendationPage = "recomendation1.php"; // Halaman default
                     break;
             }
 
@@ -89,22 +89,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     }
                     .profile {
                         display: flex;
-                        align-items: center;
+                        flex-direction: column;
+                        align-items: flex-start;
                         margin-bottom: 15px;
                     }
                     .profile img {
-                        width: 50px;
-                        height: 50px;
-                        border-radius: 50%;
-                        margin-right: 10px;
+                        width: 100px;
+                        height: 100px;
+                        object-fit: cover;
+                        border-radius: 50%; 
+                        border: 5px solid white; 
+                        margin-bottom: 10px;
                     }
                     .profile .name {
                         font-size: 1.2em;
                         font-weight: bold;
+                        margin-top: 0;
                     }
                     .profile .details {
                         font-size: 0.9em;
                         color: #6c757d;
+                        margin-top: 5px;
                     }
                     .review-content .stars {
                         color: #ffc107;
@@ -120,9 +125,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         color: #212529;
                     }
                     .back-button {
+                        background-color: #582f0e;
                         position: fixed;
                         bottom: 20px;
                         right: 20px;
+                        color: #ffff;
                     }
                 </style>
             </head>
@@ -143,10 +150,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     echo '<div class="profile">';
                     $profile_img = $row['profile_photo'] ? 'uploads/' . $row['profile_photo'] : 'default_profile.png';
                     echo '<img src="' . htmlspecialchars($profile_img) . '" alt="Profile Image">';
-                    echo '<div>';
                     echo '<div class="name">' . htmlspecialchars($row['nama_pengguna']) . '</div>';
                     echo '<div class="details">' . htmlspecialchars($row['tipe_kulit']) . ', ' . htmlspecialchars($row['lama_penggunaan']) . '</div>';
-                    echo '</div>';
                     echo '</div>';
                     echo '<div class="review-content">';
                     echo '<div class="stars">★★★★★</div>';

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <nav class="navbar navbar-expand-lg navbar-light" style="background-image: url('img/bottle.png');">
     <a class="navbar-brand" href="#">
         <img src="img/logo.png" class="align-center rounded-circle" style="height: 90px; width: 90px;">
@@ -48,8 +52,12 @@
                     JOIN US
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownJoinUs">
-                    <a class="dropdown-item" href="signup.php">SIGN UP</a>
-                    <a class="dropdown-item" href="profile.php">PROFILE</a>
+                    <?php if (isset($_SESSION['user_id'])): ?>
+                        <a class="dropdown-item" href="profile.php">PROFILE</a>
+                    <?php else: ?>
+                        <a class="dropdown-item" href="signup.php">SIGN UP</a>
+                        <a class="dropdown-item" href="profile.php">PROFILE</a>
+                    <?php endif; ?>
                 </div>
             </li>
         </ul>

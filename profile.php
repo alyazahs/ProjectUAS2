@@ -50,6 +50,9 @@ $profile_photo = $user['profile_photo'] ? 'uploads/' . $user['profile_photo'] : 
             background-image: url('img/bg2.png');
             height: 830px;
         }
+        .logout-button {
+            float: right;
+        }
     </style>
 </head>
 <body>
@@ -79,12 +82,12 @@ $profile_photo = $user['profile_photo'] ? 'uploads/' . $user['profile_photo'] : 
                 <input type="file" name="profile_photo" accept="image/*" style="width: calc(100% - 20px); background-color: #582f0e; color: white;"/>
             </p>
             <p>
-                <input type="submit" value="Save" name="update_profile" style="background-color: #a98467;  border-radius: 10px; color: white; margin-top: 5px; margin-bottom: 5px;"/>
-            </p>
-        </fieldset>
-    </form>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                <input type="submit" value="Save" class="btn" name="update_profile" style="background-color: #a98467;  border-color: transparent; color: white; margin-top: 5px; margin-bottom: 5px;"/>
+        <a href="logout.php" class="btn logout-button" style="background-color: #a98467; border-color: transparent; color: white;">Logout</a>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
