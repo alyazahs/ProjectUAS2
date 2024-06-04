@@ -1,5 +1,5 @@
-<?php include 'config.php'; // Include the database connection file ?>
-<?php include 'navbar.php'; // Include the navigation bar ?>
+<?php include 'config.php';?>
+<?php include 'navbar.php';?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,18 +21,29 @@
             border-radius: 10px;
             overflow: hidden;
             transition: transform 0.2s ease-in-out;
+            height: 400px; 
+            width: 380px;
+            display: flex;
+            flex-direction: column;
         }
         .card:hover {
             transform: scale(1.05);
         }
         .card-img-top {
+            width: 100%;
             height: 250px;
-            object-fit: cover;
+            object-fit: contain;
         }
         .card-title {
             font-size: 1.25rem;
             font-weight: bold;
             color: #582f0e;
+            flex-grow: 1; 
+        }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .btn-primary {
             background-color: #582f0e;
@@ -59,14 +70,15 @@
             } else {
                 if ($result->num_rows > 0) {
                     while ($row = $result->fetch_assoc()) {
-                        echo "<div class='col-md-4'>";
+                        echo "<div class='col-md-4 d-flex align-items-stretch'>";
                         echo "<div class='card mb-4 shadow-sm'>";
                         echo "<img src='" . htmlspecialchars($row["url_gambar"]) . "' class='card-img-top' alt='Product Image'>";
                         echo "<div class='card-body'>";
                         echo "<h5 class='card-title'>" . htmlspecialchars($row["nama_produk"]) . "</h5>";
+                        echo "<div class='mt-auto'>";
                         echo "<a href='add_review.php?productId=" . intval($row["id_produk"]) . "&categoryId=1' class='btn btn-primary'>Add Review</a>";
                         echo "<a href='add_review_process.php?productId=" . intval($row["id_produk"]) . "' class='btn btn-secondary'>See Review</a>";
-                        echo "</div></div></div>";
+                        echo "</div></div></div></div>";
                     }
                 } else {
                     echo "<div class='col-12'><p class='text-center'>No products available.</p></div>";

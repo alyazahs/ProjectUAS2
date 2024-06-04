@@ -1,5 +1,3 @@
-<?php include 'navbar.php'; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WE SHINE!</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <style>
+      body {
+            margin: 0;
+      }
         .bg-section {
             background-image: url('img/bg2.png');
+        }
+        .category-item {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+        }
+        .category-item img {
+            width: 120px;
+            height: 120px;
+            border-radius: 60px;
+            transition: transform 0.3s ease;
+        }
+        .category-item span {
+            margin-top: 10px;
+        }
+        .category-item:hover img {
+            transform: scale(1.1);
+        }
+        .navbar {
+            position: fixed; /* Tetap pada posisi saat discroll */
+            width: 100%; /* Menempati lebar penuh */
+            z-index: 1000;
+            padding-top: 0; /* Atur padding atas navbar menjadi 0 */
+            margin-top: 0;
         }
     </style>
 </head>
 <body class="bg-light">
+<?php include 'navbar.php'; ?>
     <div class="AboutUs">
         <img src="img/skincare1.png" alt="" style="position: absolute; z-index: 1; object-fit: cover; width: 100%; height: 100%; left: 0; top: 115px;">
         <section class="text-dark font-italic" style="margin-left: 300px; margin-right: 300px; margin-top: 30px; text-align: center; padding-left: 30px; padding-right: 30px; padding-top: 100px; padding-bottom: 30px; border-radius: 30px; position: relative; z-index: 2;">
@@ -25,24 +51,24 @@
 
     <h1 class="text-dark font-italic text-center" style="margin-top:250px;">All You Need</h1>
     <div class="category-container" style="margin-bottom: 100px; margin-top: 100px; align-items: flex-start; display: flex; justify-content: space-around; text-align: center;">
-        <div class="category-item" style="display: flex; flex-direction: column; text-align: center;">
-            <img src="img/skincare2.jpg" style="width: 120px; height: 120px; border-radius: 60px;">
+        <div class="category-item">
+            <img src="img/skincare2.jpg">
             <span>SKINCARE</span>
         </div>
-        <div class="category-item" style="display: flex; flex-direction: column; text-align: center;">
-            <img src="img/makeup.jpg" style="width: 120px; height: 120px; border-radius: 60px;">
+        <div class="category-item">
+            <img src="img/makeup.jpg">
             <span>MAKE UP</span>
         </div>
-        <div class="category-item" style="display: flex; flex-direction: column; text-align: center;">
-            <img src="img/soap.jpg" style="width: 120px; height: 120px; border-radius: 60px;">
+        <div class="category-item">
+            <img src="img/soap.jpg">
             <span>BODYCARE</span>
         </div>
-        <div class="category-item" style="display: flex; flex-direction: column; text-align: center;">
-            <img src="img/haircare.jpg" style="width: 120px; height: 120px; border-radius: 60px;">
+        <div class="category-item">
+            <img src="img/haircare.jpg">
             <span>HAIRCARE</span>
         </div>
-        <div class="category-item" style="display: flex; flex-direction: column; text-align: center;">
-            <img src="img/clotch.jpg" style="width: 120px; height: 120px; border-radius: 60px;">
+        <div class="category-item">
+            <img src="img/clotch.jpg">
             <span>FASHION</span>
         </div>
     </div>

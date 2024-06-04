@@ -2,7 +2,6 @@
 include 'config.php';
 include 'navbar.php';
 
-// Ensure the user is logged in
 if (!isset($_SESSION['user_id'])) {
     header('Location: login.php');
     exit();
@@ -10,7 +9,6 @@ if (!isset($_SESSION['user_id'])) {
 
 $user_id = $_SESSION['user_id'];
 
-// Fetch user profile data
 $query = "SELECT name, profile_photo FROM pengguna WHERE id = $user_id";
 $result = mysqli_query($conn, $query);
 if (!$result) {
