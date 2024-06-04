@@ -15,6 +15,7 @@
     </style>
 </head>
 
+<body>
 <div class="bg-section">
   <div class="container">
     <h1 class="text-center font-italic bold py-3" style= color:#582f0e>Get Ready With Us</h1>
