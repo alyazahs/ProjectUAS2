@@ -15,6 +15,7 @@
     </style>
 </head>
 
+<body>
 <div class="bg-section">
   <div class="container">
     <h1 class="text-center font-italic bold py-3" style= color:#582f0e>Get Ready With Us</h1>
@@ -113,6 +114,7 @@
       </div>
     </div>
   </div>
+</div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
