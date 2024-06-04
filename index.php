@@ -57,10 +57,10 @@
 
     <div class="class" style="display: flex;">
         <div class="contact mx-5">
-            <h5 style="flex: 0; margin-top: 110px; font-weight: bold;">CONTACT US</h5>
-            <p>Jl. Nomad No. 13, Klegen, Kec. Kartoharjo, Kota Madiun, Jawa Timur 63117</p>
-            <p>weshine.ofc@gmail.com</p>
-            <p>Contact (+62)83177768080</p>
+            <h5 style="flex: 1; margin-top: 110px; font-weight: bold;">CONTACT US</h5>
+                <a class="class text-dark" style="display: flex; margin-bottom: 10px;">Jl. Nomad No. 13, Klegen, Kec. Kartoharjo, Kota Madiun, Jawa Timur 63117</a>
+                <a class="class text-dark" href="mailto:weshine.ofc@gmail.com" style="display: flex; margin-bottom: 10px;">weshine.ofc@gmail.com</a>
+                <a class="class text-dark" style="display: flex; margin-bottom: 10px;">Contact (+62)83177768080</a>
         </div>
 
         <div class="sosmed mx-5">
