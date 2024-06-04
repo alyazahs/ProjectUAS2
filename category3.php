@@ -27,6 +27,16 @@
         .bg-section {
             background-image: url('img/bg2.png');
         }
+        .btn-primary{
+          color: white;
+          background-color: #582f0e;
+            border-color: #582f0e;
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+        .btn-primary:hover {
+            background-color: #7a4b2e;
+            border-color: #7a4b2e;
+        }
     </style>
 </head>
 

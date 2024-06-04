@@ -71,8 +71,8 @@
             <a class="class text-dark" href="https://x.com/WESHINE_ofc?t=WPCXPPPZZ1-tOQvMXlEdzg&s=09" style="display: flex; margin-bottom: 10px;">
                 <img src="img/twitter.jpg" style="height: 30px; width: 30px; border-radius: 5px; margin-right: 10px;">@WESHINE_ofc
             </a>
-            <a class="class text-dark" href="https://www.facebook.com/WESHINE.ofc" target="_blank" style="display: flex; margin-bottom: 10px;">
-                <img src="img/facebook.jpg" style="height: 30px; width: 30px; border-radius: 5px; margin-right: 10px;">@WESHINE.ofc
+            <a class="class text-dark" href="https://www.facebook.com/profile.php?id=61560772763062&mibextid=ZbWKwL" style="display: flex; margin-bottom: 10px;">
+                <img src="img/facebook.jpg" style="height: 30px; width: 30px; border-radius: 5px; margin-right: 10px;">@We SHINE.ofc
             </a>
         </div>
     </div>
