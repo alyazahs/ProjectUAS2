@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($result->num_rows > 0) {
             $user = $result->fetch_assoc();
             $_SESSION['user_id'] = $user['id'];
-            header("Location: profile.php");
+            header("Location: index.php"); // Redirect to index.php after login
             exit();
         } else {
             $error_message = "Email or Password is incorrect. Please try again.";

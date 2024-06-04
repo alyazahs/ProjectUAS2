@@ -21,7 +21,7 @@ if (!$user) {
     die("User not found.");
 }
 
-$profile_photo = $user['profile_photo'] ? 'uploads/' . $user['profile_photo'] : 'default_profile.png'; // Ensure you have a default profile photo
+$profile_photo = $user['profile_photo'] ? 'uploads/' . $user['profile_photo'] : 'default_profile.png';
 ?>
 
 <!DOCTYPE html>
