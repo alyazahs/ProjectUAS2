@@ -1,7 +1,6 @@
 <?php
 include 'config.php';
 include 'navbar.php';
-session_start();
 
 // Ensure the user is logged in
 if (!isset($_SESSION['user_id'])) {
@@ -45,7 +44,7 @@ if (isset($_GET['productId']) && is_numeric($_GET['productId']) && isset($_GET['
 </head>
 <body>
 <div class="container mt-5">
-    <h2 class="mb-4">Add Review</h2>
+    <h2 class="mb-4" style="color:#582f0e;">Add Review</h2>
     <form action="add_review_process.php" method="POST">
         <input type="hidden" name="productId" value="<?php echo $productId; ?>">
         <input type="hidden" name="categoryId" value="<?php echo $categoryId; ?>">
@@ -66,7 +65,7 @@ if (isset($_GET['productId']) && is_numeric($_GET['productId']) && isset($_GET['
             <label for="review">Review</label>
             <textarea class="form-control" id="review" name="review" rows="3" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit Review</button>
+        <button type="submit" class="btn" style="background-color: #582f0e; color:#ffff;">Submit Review</button>
     </form>
 </div>
 
