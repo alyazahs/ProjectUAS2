@@ -64,7 +64,7 @@
         </div>
 
         <div class="sosmed mx-5">
-            <h5 style="flex: 1; margin-top: 110px; font-weight: bold;">SOSIAL MEDIA</h5>
+            <h5 style="flex: 1; margin-top: 110px; font-weight: bold;">SOCIAL MEDIA</h5>
             <a class="class text-dark" href="https://www.instagram.com/we_shine.ofc?igsh=YzljYTk1ODg3Zg==" style="display: flex; margin-bottom: 10px;">
                 <img src="img/instagram.jpg" style="height: 30px; width: 30px; border-radius: 5px; margin-right: 10px;">@we_shine.ofc
             </a>
