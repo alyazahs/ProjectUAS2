@@ -52,6 +52,8 @@ $profile_photo = $user['profile_photo'] ? 'uploads/' . $user['profile_photo'] : 
         }
         .logout-button {
             float: right;
+            margin-top: 5px;
+            margin-right: 20px;
         }
     </style>
 </head>
