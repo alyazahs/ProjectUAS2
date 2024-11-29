@@ -16,9 +16,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $skinType = $conn->real_escape_string($_POST['skinType']);
     $usageDuration = $conn->real_escape_string($_POST['usageDuration']);
     $review = $conn->real_escape_string($_POST['review']);
+    $rating = intval($_POST['rating']);
 
-    $sql = "INSERT INTO review (id_produk, nama_pengguna, tipe_kulit, lama_penggunaan, review, id_pengguna)
-            VALUES ('$productId', '$name', '$skinType', '$usageDuration', '$review', '$user_id')";
+    $sql = "INSERT INTO review (id_produk, nama_pengguna, tipe_kulit, lama_penggunaan, review, rating, id_pengguna)
+            VALUES ('$productId', '$name', '$skinType', '$usageDuration', '$review','$rating', '$user_id')";
 
     if ($conn->query($sql) === TRUE) {
         header("Location: add_review_process.php?productId=$productId");
@@ -152,7 +153,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     echo '<div class="details">' . htmlspecialchars($row['tipe_kulit']) . ', ' . htmlspecialchars($row['lama_penggunaan']) . '</div>';
                     echo '</div>';
                     echo '<div class="review-content">';
-                    echo '<div class="stars">★★★★★</div>';
+                    echo '<div class="stars">';
+                    for ($i = 1; $i <= 5; $i++) {
+                    if ($i <= $row['rating']) {
+                        echo '<span style="color: #ffc107;">★</span>'; // Bintang berwarna
+                    } else {
+                        echo '<span style="color: #e0e0e0;">★</span>'; // Bintang tidak aktif
+                    }
+                    }
+                    echo '</div>';
                     echo '<div class="recommend">' . htmlspecialchars($row['nama_pengguna']) . ' recommends this product!</div>';
                     echo '<div class="review-text">' . htmlspecialchars($row['review']) . '</div>';
                     echo '</div>';

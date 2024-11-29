@@ -49,7 +49,12 @@ session_start();
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownJoinUs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    JOIN US
+                    
+                    <?php if (isset($_SESSION['user_id'])): ?>
+                        MEMBER AREA
+                    <?php else: ?>JOIN US
+                       
+                    <?php endif; ?>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownJoinUs">
                     <?php if (isset($_SESSION['user_id'])): ?>

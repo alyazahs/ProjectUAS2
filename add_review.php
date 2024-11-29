@@ -63,6 +63,31 @@ if (isset($_GET['productId']) && is_numeric($_GET['productId']) && isset($_GET['
             <label for="review">Review</label>
             <textarea class="form-control" id="review" name="review" rows="3" required></textarea>
         </div>
+        <div class="form-group">
+        <label for="rating">Rating</label>
+        <div id="rating">
+            <div>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1" title="Sangat Buruk">★</label>
+            </div>
+            <div>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2" title="Buruk">★★</label>
+            </div>
+            <div>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3" title="Biasa">★★★</label>
+            </div>
+            <div>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4" title="Baik">★★★★</label>
+            </div>
+            <div>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5" title="Sangat Baik">★★★★★</label>
+            </div>
+        </div>
+    </div>
         <button type="submit" class="btn" style="background-color: #582f0e; color:#ffff;">Submit Review</button>
     </form>
 </div>
